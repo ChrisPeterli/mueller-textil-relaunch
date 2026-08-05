@@ -11,9 +11,6 @@
 <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
 <link rel="alternate" hreflang="de" href="../">
 <link rel="alternate" hreflang="en" href="./">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -22,28 +19,19 @@
 <header class="site-header">
 	<div class="container header-inner">
 		<a href="#top" class="brand">
-			<img src="../assets/images/logo.png" alt="Johann Müller AG" class="brand-logo" width="42" height="42">
-			<span class="brand-text">
-				<span class="brand-name">Johann Müller AG</span>
-				<span class="brand-est">Est. 1845</span>
-			</span>
+			<img src="../assets/images/logo.png" alt="Johann Müller AG" class="brand-logo" width="44" height="44">
+			<span class="brand-name">Johann&nbsp;Müller&nbsp;AG</span>
 		</a>
 		<div class="header-right">
 			<nav id="main-nav" class="main-nav">
 				<ul>
 					<li><a href="#about">About us</a></li>
-					<li><a href="#services">Services</a></li>
+					<li><a href="#products">Products</a></li>
 					<li><a href="#certificates">Certificates</a></li>
-					<li><a href="#history">History</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-			<a href="tel:+41627450404" class="header-phone">
-				<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-				+41&nbsp;62&nbsp;745&nbsp;04&nbsp;04
-			</a>
 			<a href="../" class="lang-switch" hreflang="de" lang="de" aria-label="Auf Deutsch wechseln">DE</a>
-			<a href="#contact" class="btn btn-primary header-cta">Get in Touch</a>
 			<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
 				<span></span><span></span><span></span>
 			</button>
@@ -54,74 +42,72 @@
 <main id="main">
 
 	<section class="hero" id="top">
-		<svg class="hero-lines" viewBox="0 0 1160 500" preserveAspectRatio="none" aria-hidden="true">
-			<path d="M0,120 C 200,180 400,60 600,120 S 1000,180 1160,110" fill="none" stroke="#f0d525" stroke-width="1"/>
-			<path d="M0,380 C 220,320 420,440 640,380 S 1000,300 1160,360" fill="none" stroke="#f0d525" stroke-width="1"/>
-		</svg>
+		<div class="hero-bg" style="background-image:url('../assets/images/hero.jpg')" role="img" aria-label="Aerial view of the Johann Müller AG site in Strengelbach"></div>
+		<div class="hero-overlay"></div>
 		<div class="container hero-content">
-			<p class="eyebrow">Strengelbach, Switzerland — since 1845</p>
-			<h1>Your Partner for <span class="mark">Yarn and Tricot Finishing</span></h1>
-			<p class="lead">Five generations of bleaching, dyeing and finishing yarns, tricot fabrics, terry fabrics and finished garments made from all dyeable materials — with a capacity of over 20,000&nbsp;kg per day and the trust of leading international textile brands.</p>
+			<p class="eyebrow">Since 1845 in Strengelbach, Switzerland</p>
+			<h1>Your Partner for Yarn and Tricot Finishing</h1>
+			<p class="lead">Specialists in bleaching, dyeing and finishing yarns, tricot fabrics, terry fabrics and finished garments made from all dyeable materials.</p>
 			<div class="hero-actions">
-				<a href="#services" class="btn btn-primary">
-					Our Services
-					<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m0 0-6-6m6 6-6 6"/></svg>
-				</a>
+				<a href="#products" class="btn btn-primary">Our Services</a>
 				<a href="#contact" class="btn btn-ghost">Get in Touch</a>
 			</div>
 		</div>
-		<div class="scroll-hint" aria-hidden="true">
-			<svg viewBox="0 0 24 24"><path d="M12 4v16m0 0-6-6m6 6 6-6"/></svg>
-		</div>
+	</section>
+
+	<section class="stats" aria-label="Key figures">
 		<div class="container stats-grid">
-			<div class="stat"><span class="stat-number">1845</span><span class="stat-label">Founded in Strengelbach</span></div>
+			<div class="stat"><span class="stat-number">1845</span><span class="stat-label">Founded</span></div>
 			<div class="stat"><span class="stat-number">20,000&nbsp;kg</span><span class="stat-label">Dyeing capacity per day</span></div>
-			<div class="stat"><span class="stat-number">5</span><span class="stat-label">Generations of the Müller family</span></div>
+			<div class="stat"><span class="stat-number">5th</span><span class="stat-label">Generation family-owned</span></div>
 			<div class="stat"><span class="stat-number">3</span><span class="stat-label">International certifications</span></div>
 		</div>
 	</section>
 
 	<section id="about" class="section">
-		<div class="container about-grid">
-			<div>
-				<p class="eyebrow">About us</p>
-				<h2>Precision in bleaching, dyeing and finishing.</h2>
-				<p>Johann Müller AG specializes in bleaching, dyeing and finishing yarns, tricot fabrics, terry fabrics and finished garments made from all dyeable materials. Our products are of outstanding quality and enjoy an excellent reputation on the market — our customers include leading international textile and apparel companies.</p>
-				<p>With a dyeing capacity of over 20,000&nbsp;kg per day, we are one of the most efficient yarn and tricot finishing companies in Switzerland.</p>
-				<ul class="tag-list">
-					<li>Reliability</li>
-					<li>Quality</li>
-					<li>Advanced Technology</li>
-					<li>Fast Delivery</li>
-				</ul>
+		<div class="container">
+			<h2>About us</h2>
+			<div class="two-col">
+				<div>
+					<p>Johann Müller AG specializes in bleaching, dyeing and finishing yarns, tricot fabrics, terry fabrics and finished garments made from all dyeable materials. Our products are of outstanding quality and enjoy an excellent reputation on the market — our customers include leading international textile and apparel companies.</p>
+					<p>With a dyeing capacity of over 20,000&nbsp;kg per day, we are one of the most efficient yarn and tricot finishing companies in Switzerland. We stand for reliability, quality, advanced technology and fast delivery.</p>
+				</div>
+				<div>
+					<h3>History</h3>
+					<ul class="timeline">
+						<li><strong>1845</strong> — Founded as a yarn and cotton-cloth printing works in Strengelbach.</li>
+						<li><strong>1892</strong> — Relocation to the current site due to abundant water sources.</li>
+						<li><strong>1917 / 1939</strong> — Expansion with a knitting mill and a branch in Wohlen.</li>
+						<li><strong>1945</strong> — 100th anniversary, already 540 employees.</li>
+						<li><strong>1993</strong> — World's first textile finishing company certified to OEKO-TEX® Standard 100.</li>
+						<li><strong>2001</strong> — Switch to renewable energy sources, awarded environmental prizes.</li>
+						<li><strong>2002</strong> — The fifth generation joins the management.</li>
+						<li><strong>Today</strong> — Innovative in-house products such as SwissCotton&nbsp;Rainbow and SwissCotton&nbsp;BeDry.</li>
+					</ul>
+				</div>
 			</div>
-			<figure class="image-card">
-				<img src="../assets/images/hero.jpg" alt="Aerial view of the Johann Müller AG site in Strengelbach" loading="lazy">
-				<figcaption>Our site in Strengelbach</figcaption>
-			</figure>
 		</div>
 	</section>
 
-	<section id="services" class="section section-dark">
+	<section id="products" class="section section-alt">
 		<div class="container">
-			<p class="eyebrow">Services</p>
-			<h2>Yarn Dyeing &amp; Piece Dyeing</h2>
+			<h2>Products &amp; Services</h2>
 			<p class="section-intro">Two core areas, one standard: the highest quality in textile finishing.</p>
 			<div class="cards">
 				<article class="card">
 					<h3>Yarn Dyeing</h3>
-					<ul class="check-list">
-						<li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Package dyeing</strong> — fully automatic plant, approx. 10,000&nbsp;kg/day, batches of 5–1,000&nbsp;kg.</span></li>
-						<li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Hank dyeing</strong> — jet dyeing machines &amp; cabinet apparatus, batches of 10–300&nbsp;kg, approx. 1,500&nbsp;kg/day.</span></li>
-						<li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Winding/Twisting</strong> — rewinding as well as two-for-one twisting before or after dyeing.</span></li>
+					<ul>
+						<li><strong>Package dyeing</strong> — fully automatic plant, approx. 10,000&nbsp;kg/day, batches of 5–1,000&nbsp;kg.</li>
+						<li><strong>Hank dyeing</strong> — jet dyeing machines &amp; cabinet apparatus, batches of 10–300&nbsp;kg, approx. 1,500&nbsp;kg/day.</li>
+						<li><strong>Winding/Twisting</strong> — rewinding as well as two-for-one twisting before or after dyeing.</li>
 					</ul>
 				</article>
 				<article class="card">
 					<h3>Piece Dyeing</h3>
-					<ul class="check-list">
-						<li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Jet dyeing</strong> — fully automatic, approx. 10,000&nbsp;kg/day, batches of 5–700&nbsp;kg, including terry fabrics.</span></li>
-						<li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Garment dyeing</strong> — finished garments in batches up to 75&nbsp;kg.</span></li>
-						<li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Finishing</strong> — complete machinery for tubular and open-width fabric (up to 2.40&nbsp;m), including raising, shearing and grinding.</span></li>
+					<ul>
+						<li><strong>Jet dyeing</strong> — fully automatic, approx. 10,000&nbsp;kg/day, batches of 5–700&nbsp;kg, including terry fabrics.</li>
+						<li><strong>Garment dyeing</strong> — finished garments in batches up to 75&nbsp;kg.</li>
+						<li><strong>Finishing</strong> — complete machinery for tubular and open-width fabric (up to 2.40&nbsp;m), including raising, shearing and grinding.</li>
 					</ul>
 				</article>
 			</div>
@@ -129,87 +115,46 @@
 		</div>
 	</section>
 
-	<section class="cta-banner">
-		<div class="container cta-inner">
-			<div>
-				<h2>Ready for your next inquiry?</h2>
-				<p>Call us directly or drop us a line — we typically reply within one business day.</p>
-			</div>
-			<a href="tel:+41627450404" class="btn btn-dark">
-				<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-				Call now — +41&nbsp;62&nbsp;745&nbsp;04&nbsp;04
-			</a>
-		</div>
-	</section>
-
 	<section id="certificates" class="section">
 		<div class="container">
-			<p class="eyebrow">Certificates</p>
-			<h2>Sustainability we can prove.</h2>
+			<h2>Certificates</h2>
+			<p class="section-intro">Sustainability and quality we can prove.</p>
 			<div class="cert-grid">
 				<article class="cert-card">
 					<img src="../assets/certificates/Oeko-Tex-100.jpg" alt="OEKO-TEX® Standard 100 certificate of Johann Müller AG" loading="lazy">
-					<div class="cert-body">
-						<p class="cert-since">Certified since 1993</p>
-						<h3>OEKO-TEX® Standard 100</h3>
-						<p>Certified as the world's first textile finishing company — with owner Dr. Kurt Müller having helped shape the standard itself.</p>
-						<a class="btn btn-outline" href="../assets/certificates/Oeko-Tex-100.pdf" download>
-							<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
-							Download PDF
-						</a>
-					</div>
+					<h3>OEKO-TEX® Standard 100</h3>
+					<p>Certified since 1993 as the world's first textile finishing company — with owner Dr. Kurt Müller having helped shape the standard itself.</p>
+					<a class="btn btn-outline" href="../assets/certificates/Oeko-Tex-100.pdf" download>
+						<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+						Download PDF
+					</a>
 				</article>
 				<article class="cert-card">
 					<img src="../assets/certificates/GOTS2025.jpg" alt="GOTS certificate of Johann Müller AG" loading="lazy">
-					<div class="cert-body">
-						<p class="cert-since">Certified since 2009</p>
-						<h3>GOTS — Global Organic Textile Standard</h3>
-						<p>Certified for plant fibres from certified organic farming and animal fibres from certified organic livestock farming.</p>
-						<a class="btn btn-outline" href="../assets/certificates/GOTS2025.pdf" download>
-							<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
-							Download PDF
-						</a>
-					</div>
+					<h3>GOTS — Global Organic Textile Standard</h3>
+					<p>Certified since 2009 for plant fibres from certified organic farming and animal fibres from certified organic livestock farming.</p>
+					<a class="btn btn-outline" href="../assets/certificates/GOTS2025.pdf" download>
+						<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+						Download PDF
+					</a>
 				</article>
 				<article class="cert-card">
 					<img src="../assets/certificates/Bluesign2025.jpg" alt="bluesign® certificate of Johann Müller AG" loading="lazy">
-					<div class="cert-body">
-						<p class="cert-since">Certified since 2011</p>
-						<h3>bluesign®</h3>
-						<p>Certified for the outdoor sector — textiles free of harmful substances, produced sustainably, including the dyeing of polyamide yarns for climbing ropes.</p>
-						<a class="btn btn-outline" href="../assets/certificates/Bluesign2025.pdf" download>
-							<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
-							Download PDF
-						</a>
-					</div>
+					<h3>bluesign®</h3>
+					<p>Certified since 2011 for the outdoor sector — textiles free of harmful substances, produced sustainably, including the dyeing of polyamide yarns for climbing ropes.</p>
+					<a class="btn btn-outline" href="../assets/certificates/Bluesign2025.pdf" download>
+						<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+						Download PDF
+					</a>
 				</article>
 			</div>
-		</div>
-	</section>
-
-	<section id="history" class="section section-dark">
-		<div class="container">
-			<p class="eyebrow">History</p>
-			<h2>Five Generations, One Family Business</h2>
-			<p class="section-intro">From a yarn and cotton-cloth printing works in 1845 to one of the most efficient yarn and tricot finishing companies in Switzerland — a journey through five generations of the Müller family.</p>
-			<ul class="timeline">
-				<li><span class="timeline-year">1845</span><span class="timeline-text">Founded as a yarn and cotton-cloth printing works in Strengelbach.</span></li>
-				<li><span class="timeline-year">1892</span><span class="timeline-text">Relocation to the current site due to abundant water sources.</span></li>
-				<li><span class="timeline-year">1917/1939</span><span class="timeline-text">Expansion with a knitting mill and a branch in Wohlen.</span></li>
-				<li><span class="timeline-year">1945</span><span class="timeline-text">100th anniversary, already 540 employees.</span></li>
-				<li><span class="timeline-year">1993</span><span class="timeline-text">World's first textile finishing company certified to OEKO-TEX® Standard 100.</span></li>
-				<li><span class="timeline-year">2001</span><span class="timeline-text">Switch to renewable energy sources, awarded environmental prizes.</span></li>
-				<li><span class="timeline-year">2002</span><span class="timeline-text">The fifth generation joins the management.</span></li>
-				<li><span class="timeline-year">Today</span><span class="timeline-text">Innovative in-house products such as SwissCotton&nbsp;Rainbow and SwissCotton&nbsp;BeDry.</span></li>
-			</ul>
 		</div>
 	</section>
 
 	<section id="contact" class="section section-alt">
 		<div class="container kontakt-grid">
 			<div>
-				<p class="eyebrow">Contact</p>
-				<h2>Let's talk about your project.</h2>
+				<h2>Contact</h2>
 				<address>
 					<strong>Johann Müller AG</strong><br>
 					Brittnauerstrasse 58<br>
@@ -230,7 +175,7 @@
 <footer class="site-footer">
 	<div class="container footer-inner">
 		<div class="footer-brand">
-			<img src="../assets/images/logo.png" alt="" width="28" height="28">
+			<img src="../assets/images/logo.png" alt="" width="32" height="32">
 			<span>Johann Müller AG</span>
 		</div>
 		<p>Brittnauerstrasse 58 · 4802 Strengelbach · Switzerland</p>
