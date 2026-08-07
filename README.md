@@ -14,13 +14,17 @@ assets/certificates/    OEKO-TEX®, GOTS, bluesign® — je als PDF + Vorschaubi
 
 ## Corporate-Farben
 
-Aus dem Original-Logo und CSS extrahiert, dokumentiert als CSS-Variablen in `css/style.css`:
+Editorial-technische Palette, dokumentiert als CSS-Variablen in `css/style.css`:
 
-| Variable | Wert | Herkunft |
+| Variable | Wert | Verwendung |
 |---|---|---|
-| `--color-brand-yellow` | `#ffe100` | dominante Logofarbe |
-| `--color-brand-black` | `#111111` | Logo-Kontrastfarbe |
-| `--color-bg-alt` | `#f7f6f2` | neutraler Hintergrund für alternierende Sektionen |
+| `--gold` | `#ffe701` | Akzentfarbe (Buttons, Marker, Icons) |
+| `--gold-light` | `#fff066` | Hover-Zustand auf Gold |
+| `--gold-dark` | `#a68a00` | Text auf hellem Grund (Eyebrows, Zertifikatsdaten) |
+| `--ink` | `#14151a` | dunkle Sektionen, Fliesstext |
+| `--ink-700` / `--ink-800` | `#2a2d38` / `#1e2028` | Hover- bzw. Kartenhintergrund auf Dunkel |
+| `--paper` | `#faf8f4` | heller Grundhintergrund |
+| `--paper-dim` | `#f2efe8` | neutraler Hintergrund für alternierende Sektionen |
 
 ## Inhalte
 

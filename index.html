@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Johann Müller AG – Ihr Partner für Garn- und Tricotveredlung</title>
+<title>Johann Müller AG – Ihr Partner für Garn- und Stoffveredelung</title>
 <meta name="description" content="Johann Müller AG in Strengelbach: Garn- und Stückfärberei, Textilveredlung seit 1845. OEKO-TEX® Standard 100, GOTS und bluesign® zertifiziert.">
 <link rel="icon" href="assets/images/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="assets/images/favicon-16x16.png" sizes="16x16" type="image/png">
@@ -19,156 +19,262 @@
 <body>
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
-<header class="site-header">
+<header class="site-header" id="siteHeader">
 	<div class="container header-inner">
-		<a href="#top" class="brand">
+		<a href="#home" class="brand">
 			<img src="assets/images/logo.png" alt="Johann Müller AG" class="brand-logo" width="44" height="44">
-			<span class="brand-name">Johann&nbsp;Müller&nbsp;AG</span>
+			<span class="brand-text"><span class="brand-name">Johann&nbsp;Müller&nbsp;AG</span><span class="brand-est">Est. 1845</span></span>
 		</a>
 		<div class="header-right">
-			<nav id="main-nav" class="main-nav">
+			<nav class="main-nav" aria-label="Hauptnavigation">
 				<ul>
-					<li><a href="#ueber-uns">Über uns</a></li>
-					<li><a href="#produkte">Produkte</a></li>
-					<li><a href="#zertifikate">Zertifikate</a></li>
-					<li><a href="#kontakt">Kontakt</a></li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">Über uns</a></li>
+					<li><a href="#services">Leistungen</a></li>
+					<li><a href="#certificates">Zertifikate</a></li>
+					<li><a href="#history">Geschichte</a></li>
+					<li><a href="#location">Standort</a></li>
+					<li><a href="#contact">Kontakt</a></li>
 				</ul>
 			</nav>
-			<a href="en/" class="lang-switch" hreflang="en" lang="en" aria-label="Switch to English">EN</a>
-			<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menü öffnen">
-				<span></span><span></span><span></span>
+			<a class="phone-link" href="tel:+41627450404">
+				<svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+				+41&nbsp;62&nbsp;745&nbsp;04&nbsp;04
+			</a>
+			<div class="lang-toggle">
+				<a href="./" class="active" aria-current="true">DE</a>
+				<a href="en/" hreflang="en" lang="en">EN</a>
+			</div>
+			<button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Menü öffnen">
+				<svg class="icon icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+				<svg class="icon icon-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
 			</button>
 		</div>
 	</div>
+	<nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">Über uns</a></li>
+			<li><a href="#services">Leistungen</a></li>
+			<li><a href="#certificates">Zertifikate</a></li>
+			<li><a href="#history">Geschichte</a></li>
+			<li><a href="#location">Standort</a></li>
+			<li><a href="#contact">Kontakt</a></li>
+			<li><a href="en/" hreflang="en" lang="en">English</a></li>
+		</ul>
+		<div class="mobile-cta"><a href="#contact" class="pill pill-gold">Kontakt aufnehmen</a></div>
+	</nav>
 </header>
 
 <main id="main">
 
-	<section class="hero" id="top">
-		<div class="hero-bg" style="background-image:url('assets/images/hero.jpg')" role="img" aria-label="Luftaufnahme des Firmengeländes der Johann Müller AG in Strengelbach"></div>
-		<div class="hero-overlay"></div>
-		<div class="container hero-content">
-			<p class="eyebrow">Seit 1845 in Strengelbach, Schweiz</p>
-			<h1>Ihr Partner für Garn- und Tricotveredlung</h1>
-			<p class="lead">Spezialisiert auf das Bleichen, Färben und Ausrüsten von Garnen, Tricotstoffen, Frottiergeweben und Fertigteilen aus allen färbbaren Materialien.</p>
-			<div class="hero-actions">
-				<a href="#produkte" class="btn btn-primary">Unsere Leistungen</a>
-				<a href="#kontakt" class="btn btn-ghost">Kontakt aufnehmen</a>
+	<section class="hero" id="home">
+		<div class="hero-glow"></div>
+		<svg class="hero-waves" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+			<path d="M -100 90 C 250 20, 450 180, 700 70 S 1150 140, 1400 40" stroke="#ffe701"/>
+			<path d="M -100 200 C 250 130, 450 290, 700 180 S 1150 250, 1400 150" stroke="#3a5f82"/>
+			<path d="M -100 310 C 250 240, 450 400, 700 290 S 1150 360, 1400 260" stroke="#ffe701"/>
+			<path d="M -100 420 C 250 350, 450 510, 700 400 S 1150 470, 1400 370" stroke="#3a5f82"/>
+			<path d="M -100 530 C 250 460, 450 620, 700 510 S 1150 580, 1400 480" stroke="#ffe701"/>
+			<path d="M -100 640 C 250 570, 450 730, 700 620 S 1150 690, 1400 590" stroke="#3a5f82"/>
+			<path d="M -100 750 C 250 680, 450 840, 700 730 S 1150 800, 1400 700" stroke="#ffe701"/>
+		</svg>
+		<div class="container hero-inner">
+			<p class="eyebrow hero-eyebrow"><span class="line"></span>Strengelbach, Schweiz — seit 1845</p>
+			<h1>Ihr Partner für <mark>Garn- und Stoff</mark>veredelung.</h1>
+			<p class="hero-sub">Fünf Generationen Bleichen, Färben und Ausrüsten von Garnen, Tricotstoffen, Frottiergeweben und Fertigteilen aus allen färbbaren Materialien — mit einer Kapazität von über 20'000&nbsp;kg pro Tag und dem Vertrauen führender internationaler Textilmarken.</p>
+			<div class="hero-cta">
+				<a href="#services" class="pill pill-gold">Unsere Leistungen <svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+				<a href="#contact" class="pill pill-outline">Kontakt aufnehmen</a>
 			</div>
 		</div>
-	</section>
-
-	<section class="stats" aria-label="Kennzahlen">
-		<div class="container stats-grid">
-			<div class="stat"><span class="stat-number">1845</span><span class="stat-label">Gegründet</span></div>
-			<div class="stat"><span class="stat-number">20'000&nbsp;kg</span><span class="stat-label">Färbekapazität pro Tag</span></div>
-			<div class="stat"><span class="stat-number">5.</span><span class="stat-label">Generation in Familienbesitz</span></div>
-			<div class="stat"><span class="stat-number">3</span><span class="stat-label">Internationale Zertifizierungen</span></div>
-		</div>
-	</section>
-
-	<section id="ueber-uns" class="section">
-		<div class="container">
-			<h2>Über uns</h2>
-			<div class="two-col">
-				<div>
-					<p>Die Johann Müller AG ist spezialisiert auf das Bleichen, Färben und Ausrüsten von Garnen, Tricotstoffen, Frottiergeweben und Fertigteilen aus allen färbbaren Materialien. Unsere Produkte sind von ausgezeichneter Qualität und geniessen ein hohes Ansehen auf dem Markt – zu unseren Kunden zählen führende internationale Textil- und Bekleidungsunternehmen.</p>
-					<p>Mit einer Färbekapazität von über 20'000&nbsp;kg pro Tag sind wir eines der leistungsfähigsten Garn- und Tricotveredlungsunternehmen der Schweiz. Wir setzen auf Zuverlässigkeit, Qualität, fortschrittliche Technologie und einen raschen Lieferservice.</p>
-				</div>
-				<div>
-					<h3>Geschichte</h3>
-					<ul class="timeline">
-						<li><strong>1845</strong> — Gründung als Garn- und Baumwolltuch-Druckerei in Strengelbach.</li>
-						<li><strong>1892</strong> — Umzug an den heutigen Standort wegen ausreichender Wasserquellen.</li>
-						<li><strong>1917 / 1939</strong> — Erweiterung um eine Strickerei und eine Filiale in Wohlen.</li>
-						<li><strong>1945</strong> — 100-jähriges Jubiläum, bereits 540 Mitarbeitende.</li>
-						<li><strong>1993</strong> — Weltweit erster nach OEKO-TEX® Standard 100 zertifizierter Textilveredlungsbetrieb.</li>
-						<li><strong>2001</strong> — Umstieg auf erneuerbare Energieträger, Auszeichnung mit Umweltpreisen.</li>
-						<li><strong>2002</strong> — Eintritt der fünften Generation in die Geschäftsleitung.</li>
-						<li><strong>Heute</strong> — Innovative Eigenprodukte wie SwissCotton&nbsp;Rainbow und SwissCotton&nbsp;BeDry.</li>
-					</ul>
-				</div>
+		<div class="stats-bar">
+			<div class="container stats-grid">
+				<div class="stat"><div class="stat-val">1845</div><div class="stat-lbl">Gegründet in Strengelbach</div></div>
+				<div class="stat"><div class="stat-val">20'000&nbsp;kg</div><div class="stat-lbl">Färbekapazität pro Tag</div></div>
+				<div class="stat"><div class="stat-val">5</div><div class="stat-lbl">Generationen der Familie Müller</div></div>
+				<div class="stat"><div class="stat-val">3</div><div class="stat-lbl">Internationale Zertifizierungen</div></div>
 			</div>
 		</div>
+		<a href="#about" class="scroll-cue" aria-hidden="true" tabindex="-1">
+			<svg class="icon" viewBox="0 0 24 24" style="width:20px;height:20px;"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+		</a>
 	</section>
 
-	<section id="produkte" class="section section-alt">
-		<div class="container">
-			<h2>Produkte &amp; Dienstleistungen</h2>
-			<p class="section-intro">Zwei Kernbereiche, ein Anspruch: höchste Qualität in der Textilveredlung.</p>
-			<div class="cards">
-				<article class="card">
-					<h3>Garnfärberei</h3>
-					<ul>
-						<li><strong>Kreuzspulfärberei</strong> — vollautomatische Anlage, ca. 10'000&nbsp;kg/Tag, Chargen von 5–1'000&nbsp;kg.</li>
-						<li><strong>Strangenfärberei</strong> — Spritzmaschinen &amp; Schrankapparate, Partien von 10–300&nbsp;kg, ca. 1'500&nbsp;kg/Tag.</li>
-						<li><strong>Spulerei/Zwirnerei</strong> — Umspulung sowie Doppeldraht-Zwirnerei vor oder nach dem Färben.</li>
-					</ul>
-				</article>
-				<article class="card">
-					<h3>Stückfärberei</h3>
-					<ul>
-						<li><strong>Jetfärberei</strong> — vollautomatisch, ca. 10'000&nbsp;kg/Tag, Partien von 5–700&nbsp;kg, inkl. Frottierware.</li>
-						<li><strong>Garment-Färberei</strong> — Fertigteile in Partien bis 75&nbsp;kg.</li>
-						<li><strong>Ausrüsterei</strong> — kompletter Maschinenpark im Schlauch und offenbreit (bis 2.40&nbsp;m), inkl. Rauen, Scheren, Schleifen.</li>
-					</ul>
-				</article>
-			</div>
-			<p class="materials"><strong>Materialien:</strong> Baumwolle, Viskose, Leinen, Wolle, Seide, Polyester, Polyamid, Polyacrylnitril sowie deren Mischungen — Stapelfaser- und Filamentgarne.</p>
-		</div>
-	</section>
-
-	<section id="zertifikate" class="section">
-		<div class="container">
-			<h2>Zertifikate</h2>
-			<p class="section-intro">Nachhaltigkeit und Qualität, die wir belegen können.</p>
-			<div class="cert-grid">
-				<article class="cert-card">
-					<img src="assets/certificates/Oeko-Tex-100.jpg" alt="OEKO-TEX® Standard 100 Zertifikat der Johann Müller AG" loading="lazy">
-					<h3>OEKO-TEX® Standard 100</h3>
-					<p>Seit 1993 als weltweit erster Textilveredlungsbetrieb zertifiziert — unter Mitwirkung von Dr. Kurt Müller bei der Ausgestaltung des Standards.</p>
-					<a class="btn btn-outline" href="assets/certificates/Oeko-Tex-100.pdf" download>
-						<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
-						PDF herunterladen
-					</a>
-				</article>
-				<article class="cert-card">
-					<img src="assets/certificates/GOTS2025.jpg" alt="GOTS Zertifikat der Johann Müller AG" loading="lazy">
-					<h3>GOTS — Global Organic Textile Standard</h3>
-					<p>Seit 2009 zertifiziert für pflanzliche Fasern aus kontrolliert biologischem Anbau und tierische Fasern aus kontrolliert biologischer Tierhaltung.</p>
-					<a class="btn btn-outline" href="assets/certificates/GOTS2025.pdf" download>
-						<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
-						PDF herunterladen
-					</a>
-				</article>
-				<article class="cert-card">
-					<img src="assets/certificates/Bluesign2025.jpg" alt="bluesign® Zertifikat der Johann Müller AG" loading="lazy">
-					<h3>bluesign®</h3>
-					<p>Seit 2011 für den Bereich Outdoor zertifiziert — schadstofffreie, nachhaltig produzierte Textilien, u.&nbsp;a. beim Färben von Polyamid-Garnen für Bergseile.</p>
-					<a class="btn btn-outline" href="assets/certificates/Bluesign2025.pdf" download>
-						<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
-						PDF herunterladen
-					</a>
-				</article>
-			</div>
-		</div>
-	</section>
-
-	<section id="kontakt" class="section section-alt">
-		<div class="container kontakt-grid">
+	<section class="about" id="about">
+		<div class="container about-grid">
 			<div>
-				<h2>Kontakt</h2>
-				<address>
-					<strong>Johann Müller AG</strong><br>
-					Brittnauerstrasse 58<br>
-					4802 Strengelbach<br>
-					Schweiz<br><br>
-					<a href="tel:+41627450404">+41&nbsp;62&nbsp;745&nbsp;04&nbsp;04</a><br>
-					<a href="mailto:info@mueller-textil.ch">info@mueller-textil.ch</a>
-				</address>
+				<p class="eyebrow about-eyebrow">Willkommen</p>
+				<h2>Bleichen, Färben und Ausrüsten — auf höchstem Niveau.</h2>
+				<p>Die Johann Müller AG ist spezialisiert auf das Bleichen, Färben und Ausrüsten von Garnen, Tricotstoffen, Frottiergeweben und Fertigteilen aus allen färbbaren Materialien. Unsere Produkte sind von ausgezeichneter Qualität und geniessen ein hohes Ansehen auf dem Markt — zu unseren Kunden zählen führende internationale Textil- und Bekleidungsunternehmen.</p>
+				<p>Mit einer Färbekapazität von über 20'000&nbsp;kg pro Tag sind wir eines der leistungsfähigsten Garn- und Tricotveredlungsunternehmen der Schweiz. Wir setzen auf Zuverlässigkeit, Qualität, fortschrittliche Technologie und einen raschen Lieferservice.</p>
+				<div class="about-tags">
+					<span>Zuverlässigkeit</span>
+					<span>Qualität</span>
+					<span>Fortschrittliche Technologie</span>
+					<span>Rascher Lieferservice</span>
+				</div>
 			</div>
-			<div class="map-wrap">
-				<iframe title="Standort Johann Müller AG, Brittnauerstrasse 58, 4802 Strengelbach" loading="lazy" src="https://www.google.com/maps?q=Brittnauerstrasse+58,+4802+Strengelbach&output=embed" width="100%" height="340" style="border:0"></iframe>
+			<figure class="about-figure">
+				<img src="assets/images/hero.jpg" alt="Luftaufnahme des Firmengeländes der Johann Müller AG in Strengelbach" loading="lazy">
+				<figcaption>Unser Veredlungsbetrieb in Strengelbach</figcaption>
+			</figure>
+		</div>
+	</section>
+
+	<section class="services" id="services">
+		<div class="container">
+			<p class="eyebrow">Produkte &amp; Dienstleistungen</p>
+			<h2>Zwei Betriebe. Ein Qualitätsanspruch.</h2>
+			<div class="services-grid">
+				<div class="service-card">
+					<h3>Garnfärberei</h3>
+					<p class="summary">Eine moderne, vollautomatische Kreuzspulfärberei mit einer Färbekapazität von rund 10'000&nbsp;kg Garn pro Tag.</p>
+					<ul>
+						<li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Kreuzspulfärberei — Chargen von 5&nbsp;kg bis 1'000&nbsp;kg, rund 10'000&nbsp;kg/Tag</li>
+						<li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Strangenfärberei mit Spray- und Kabinettmaschinen — 10&nbsp;kg bis 300&nbsp;kg, rund 1'500&nbsp;kg/Tag</li>
+						<li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Spulerei, Umspulen und Wachsen zu Konus-, Zylinder- und Ananasspulen</li>
+						<li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Zwirnerei vor oder nach dem Färben</li>
+					</ul>
+				</div>
+				<div class="service-card">
+					<h3>Stückfärberei</h3>
+					<p class="summary">Eine moderne, vollautomatische Jetfärberei mit einer Färbekapazität von rund 10'000&nbsp;kg pro Tag, ergänzt durch eine eigene Garment-Färberei.</p>
+					<ul>
+						<li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>HT- und Atmosphärenjets — Chargen von 5&nbsp;kg bis 700&nbsp;kg, rund 10'000&nbsp;kg/Tag</li>
+						<li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Klassische Haspelfärbeapparate für empfindliche Ware sowie Frottier-spezifische Maschinen</li>
+						<li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Garment-Färberei bis 75&nbsp;kg Charge</li>
+						<li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Ausrüstung bis 2,40&nbsp;m Breite — Rauen, Scheren, Schleifen</li>
+					</ul>
+				</div>
+			</div>
+			<p class="services-materials"><strong>Materialien:</strong> Baumwolle, Viscose, Leinen, Wolle, Seide, Polyester, Polyamid, Polyacrylnitril sowie deren Mischungen — Stapelfaser- und Filamentgarne.</p>
+		</div>
+	</section>
+
+	<section class="cta-banner">
+		<div class="container">
+			<div>
+				<h2>Bereit für Ihren nächsten Auftrag?</h2>
+				<p>Rufen Sie uns direkt an — wir antworten in der Regel innerhalb eines Werktages.</p>
+			</div>
+			<a href="tel:+41627450404" class="pill pill-ink">
+				<svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+				Jetzt anrufen — +41&nbsp;62&nbsp;745&nbsp;04&nbsp;04
+			</a>
+		</div>
+	</section>
+
+	<section class="certs" id="certificates">
+		<div class="container">
+			<p class="eyebrow">Zertifikate</p>
+			<h2>Vertrauen durch internationale Standards.</h2>
+			<div class="certs-grid">
+				<div class="cert-card">
+					<div class="cert-icon"><svg class="icon" viewBox="0 0 24 24" style="width:20px;height:20px;"><path d="M12 2 4 5v6c0 5.25 3.4 9.74 8 11 4.6-1.26 8-5.75 8-11V5l-8-3Z"/></svg></div>
+					<h3>OEKO-TEX® Standard 100</h3>
+					<p class="cert-since">Zertifiziert seit 1993</p>
+					<p class="desc">Seit 1993 als weltweit erster Textilveredlungsbetrieb zertifiziert — unter Mitwirkung von Dr. Kurt Müller bei der Ausgestaltung des Standards.</p>
+					<a class="cert-pdf" href="assets/certificates/Oeko-Tex-100.pdf" download>
+						<svg class="icon" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+						PDF herunterladen
+					</a>
+				</div>
+				<div class="cert-card">
+					<div class="cert-icon"><svg class="icon" viewBox="0 0 24 24" style="width:20px;height:20px;"><path d="M11 20A7 7 0 0 1 4 13c0-4 3-8 8-11 5 3 8 7 8 11a7 7 0 0 1-7 7"/><path d="M12 20v-8"/></svg></div>
+					<h3>bluesign®</h3>
+					<p class="cert-since">Zertifiziert seit 2011</p>
+					<p class="desc">Seit 2011 für den Bereich Outdoor zertifiziert — schadstofffreie, nachhaltig produzierte Textilien, u.&nbsp;a. beim Färben von Polyamid-Garnen für Bergseile.</p>
+					<a class="cert-pdf" href="assets/certificates/Bluesign2025.pdf" download>
+						<svg class="icon" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+						PDF herunterladen
+					</a>
+				</div>
+				<div class="cert-card">
+					<div class="cert-icon"><svg class="icon" viewBox="0 0 24 24" style="width:20px;height:20px;"><circle cx="12" cy="8" r="5"/><path d="M8.5 13 6 22l6-3 6 3-2.5-9"/></svg></div>
+					<h3>GOTS</h3>
+					<p class="cert-since">Zertifiziert seit 2009</p>
+					<p class="desc">Seit 2009 zertifiziert für pflanzliche Fasern aus kontrolliert biologischem Anbau und tierische Fasern aus kontrolliert biologischer Tierhaltung.</p>
+					<a class="cert-pdf" href="assets/certificates/GOTS2025.pdf" download>
+						<svg class="icon" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+						PDF herunterladen
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="history" id="history">
+		<div class="container">
+			<p class="eyebrow">Geschichte</p>
+			<h2>Fünf Generationen, ein Familienunternehmen.</h2>
+			<p class="history-intro">Von einer Garn- und Baumwolltuch-Druckerei im Bauernhaus 1845 bis zu einem der leistungsfähigsten Garn- und Tricotveredlungsunternehmen der Schweiz — eine Zeitreise, geprägt von der Familie Müller.</p>
+			<ol class="timeline">
+				<li><span class="dot"></span><div class="entry"><div class="year">1845</div><h3>Eine Mühle im Bauernhaus</h3><p>Gründung einer Garn- und Baumwolltuch-Druckerei in einem Bauernhaus in Strengelbach. Das Handweben prägt zu dieser Zeit das untere Wiggertal.</p></div></li>
+				<li class="right"><span class="dot"></span><div class="entry"><div class="year">1883</div><h3>Eine Färberei entsteht</h3><p>Nach dem Tod von Johann Müller-Wullschleger tritt Sohn Johann Paul Müller in die Geschäftsleitung ein und gründet neben der Druckerei eine Garnbleicherei und -färberei.</p></div></li>
+				<li><span class="dot"></span><div class="entry"><div class="year">1892</div><h3>Umzug</h3><p>Der Betrieb zieht 300 Meter südlich an den heutigen Standort, direkt neben eine wichtige Wasserquelle.</p></div></li>
+				<li class="right"><span class="dot"></span><div class="entry"><div class="year">1899</div><h3>Maschinelles Färben</h3><p>Umstellung der Garnfärberei vom Handbetrieb auf den maschinellen Färbeprozess. Export nach Britisch-Indien, Südostasien, auf die Philippinen und in die Türkei.</p></div></li>
+				<li><span class="dot"></span><div class="entry"><div class="year">1917</div><h3>Marke Streba</h3><p>Eine Strickerei und Konfektion werden unter der Marke Streba eingegliedert. Der Erste Weltkrieg unterbricht den Export.</p></div></li>
+				<li class="right"><span class="dot"></span><div class="entry"><div class="year">1927</div><h3>Sechs Söhne übernehmen</h3><p>Johann Paul Müller übergibt die Leitung an seine sechs Söhne. Das Unternehmen wird zur „Johann Müller Aktiengesellschaft – Färberei und Strickerei" mit 310 Mitarbeitenden.</p></div></li>
+				<li><span class="dot"></span><div class="entry"><div class="year">1945</div><h3>100 Jahre</h3><p>Die Firma feiert ihr 100-jähriges Bestehen mit 540 Mitarbeitenden, geführt von fünf Söhnen in Handel, Technik, Strickerei, Verkauf und Färberei.</p></div></li>
+				<li class="right"><span class="dot"></span><div class="entry"><div class="year">1968</div><h3>Vierte Generation</h3><p>Dr. Kurt und Werner Müller, Söhne von Werner Müller sen., übernehmen die Färberei in Strengelbach.</p></div></li>
+				<li><span class="dot"></span><div class="entry"><div class="year">1978</div><h3>Weltneuheit</h3><p>Die Johann Müller AG entwickelt den ersten Doppelband-Düsen-Krumpftrockner für schrumpfarme Ausrüstung ohne Chemikalienzusatz — heute Weltstandard.</p></div></li>
+				<li class="right"><span class="dot"></span><div class="entry"><div class="year">1979–1999</div><h3>Wachstum durch Zukäufe</h3><p>Sechs Veredlungs- und Färbereibetriebe kommen zur Gruppe: in Bürglen, Basel, Oberuzwil, Anglikon, Gais, Birrwil, Zofingen, Roggwil und Küsnacht.</p></div></li>
+				<li><span class="dot"></span><div class="entry"><div class="year">1993</div><h3>Weltweit erste Zertifizierung</h3><p>Als weltweit erster Textilveredlungsbetrieb wird die Johann Müller AG nach dem Oeko-Tex® Standard 100 zertifiziert.</p></div></li>
+				<li class="right"><span class="dot"></span><div class="entry"><div class="year">2001</div><h3>Pionier erneuerbarer Energie</h3><p>Die Wärmeerzeugung wird von Öl auf Knochenfett umgestellt. Die Initiative wird mit dem Organic Textile Award und dem Schweizer Solarpreis ausgezeichnet.</p></div></li>
+				<li><span class="dot"></span><div class="entry"><div class="year">2002</div><h3>Fünfte Generation</h3><p>Markus Müller, Sohn von Dr. Kurt Müller, tritt ins Unternehmen ein.</p></div></li>
+				<li class="right"><span class="dot"></span><div class="entry"><div class="year">2006–2008</div><h3>SwissCotton</h3><p>Gemeinsam mit der Spinnerei Hermann Bühler AG lanciert die Johann Müller AG SwissCotton Rainbow und SwissCotton BeDry — innovative, feuchtigkeitsregulierende Naturgarne.</p></div></li>
+			</ol>
+		</div>
+	</section>
+
+	<section class="location" id="location">
+		<div class="container">
+			<p class="eyebrow">Standort</p>
+			<h2>Besuchen Sie uns in Strengelbach.</h2>
+			<div class="location-card">
+				<div class="location-info">
+					<div class="addr-row">
+						<div class="icon-circle"><svg class="icon" viewBox="0 0 24 24" style="width:18px;height:18px;"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+						<div>
+							<p class="addr-label">Adresse</p>
+							<p class="addr-text">Brittnauerstrasse 58<br>4802 Strengelbach<br>Aargau, Schweiz</p>
+						</div>
+					</div>
+					<a href="https://www.google.com/maps/dir/?api=1&destination=Brittnauerstrasse+58,+4802+Strengelbach" target="_blank" rel="noreferrer" class="pill pill-gold">
+						<svg class="icon" viewBox="0 0 24 24"><path d="m3 11 18-8-8 18-2-8-8-2Z"/></svg>
+						Route berechnen
+					</a>
+				</div>
+				<div class="map-embed">
+					<iframe title="Standort Johann Müller AG, Brittnauerstrasse 58, 4802 Strengelbach" loading="lazy" src="https://www.google.com/maps?q=Brittnauerstrasse+58,+4802+Strengelbach&output=embed" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="container">
+			<div>
+				<p class="eyebrow">Kontakt</p>
+				<h2>Sprechen wir über Ihren nächsten Auftrag.</h2>
+				<p class="contact-sub">Ob Garn, Tricot, Frottier oder Fertigteile — melden Sie sich, unser Team meldet sich umgehend bei Ihnen.</p>
+				<div class="contact-links">
+					<a href="mailto:info@mueller-textil.ch"><span class="icon-circle-sm"><svg class="icon" viewBox="0 0 24 24" style="width:16px;height:16px;"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg></span>info@mueller-textil.ch</a>
+					<a href="tel:+41627450404"><span class="icon-circle-sm"><svg class="icon" viewBox="0 0 24 24" style="width:16px;height:16px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>+41&nbsp;62&nbsp;745&nbsp;04&nbsp;04</a>
+				</div>
+			</div>
+			<div class="contact-form">
+				<form id="contactForm">
+					<div class="form-row">
+						<label>Ihr Name<input type="text" name="name" placeholder="Maria Muster" required></label>
+						<label>Ihre E-Mail-Adresse<input type="email" name="email" placeholder="maria@firma.ch" required></label>
+					</div>
+					<label>Betreff<input type="text" name="subject" placeholder="Anfrage Garnfärberei"></label>
+					<label>Ihre Nachricht<textarea name="message" rows="5" placeholder="Erzählen Sie uns von Ihrem Projekt…" required></textarea></label>
+					<button type="submit" class="pill pill-ink">Nachricht senden <svg class="icon" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4 20-7Z"/></svg></button>
+					<p class="contact-note">Öffnet Ihr E-Mail-Programm mit vorausgefüllter Nachricht an info@mueller-textil.ch.</p>
+				</form>
 			</div>
 		</div>
 	</section>
@@ -176,15 +282,32 @@
 </main>
 
 <footer class="site-footer">
-	<div class="container footer-inner">
-		<div class="footer-brand">
-			<img src="assets/images/logo.png" alt="" width="32" height="32">
-			<span>Johann Müller AG</span>
+	<div class="container footer-top">
+		<div>
+			<div class="footer-brand">
+				<img src="assets/images/logo.png" alt="">
+				<span>Johann Müller AG</span>
+			</div>
+			<p class="footer-tagline">Ihr Partner für Garn- und Stoffveredelung.</p>
 		</div>
-		<p>Brittnauerstrasse 58 · 4802 Strengelbach · Schweiz</p>
-		<p><a href="tel:+41627450404">+41&nbsp;62&nbsp;745&nbsp;04&nbsp;04</a> · <a href="mailto:info@mueller-textil.ch">info@mueller-textil.ch</a></p>
-		<p class="copyright">© <span id="year"></span> Johann Müller AG. Alle Rechte vorbehalten.</p>
+		<nav class="footer-nav" aria-label="Footer-Navigation">
+			<a href="#home">Home</a>
+			<a href="#about">Über uns</a>
+			<a href="#services">Leistungen</a>
+			<a href="#certificates">Zertifikate</a>
+			<a href="#history">Geschichte</a>
+			<a href="#location">Standort</a>
+			<a href="#contact">Kontakt</a>
+		</nav>
+		<div class="footer-addr">
+			<p>Brittnauerstrasse 58</p>
+			<p>4802 Strengelbach</p>
+			<p>Aargau, Schweiz</p>
+			<p class="sp"><a href="tel:+41627450404">+41&nbsp;62&nbsp;745&nbsp;04&nbsp;04</a></p>
+			<p><a href="mailto:info@mueller-textil.ch">info@mueller-textil.ch</a></p>
+		</div>
 	</div>
+	<div class="container footer-bottom">© <span id="year"></span> Johann Müller AG. Alle Rechte vorbehalten.</div>
 </footer>
 
 <script src="js/script.js"></script>
